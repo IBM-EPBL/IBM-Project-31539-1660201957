@@ -1,0 +1,30 @@
+
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Index </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">					
+		<style>
+			.border{
+				padding:30px;
+				margin:100px;
+				border: 2px solid black;
+			}
+		</style>
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+			<div class="header">
+				<h1 class="word">Index</h1>
+			</div>
+		<div align="center" class="border">
+</br></br></br>
+				<h1 class="bottom">
+					Hi {{session.username}}!!</br></br> Welcome to my first flask page...				
+				</h1></br></br></br>
+				<a href="{{ url_for('logout') }}" class="btn">Logout</a>
+		</div>
+		</div>
+	</body>
+</html>

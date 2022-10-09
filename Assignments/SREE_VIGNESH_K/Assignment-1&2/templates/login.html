@@ -1,0 +1,47 @@
+<!-- Store this code in 'login.html' file inside the 'templates' folder -->
+
+<html>
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title> Login </title>	
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">	
+		<!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm" style="display:flex;align-items:center;justify-content:center;" >
+					<img src="{{ url_for('static', filename='Drawable/Login-Image.jpg') }}" class="img-thumbnail">
+				</div>
+				<div class="col-sm-alert">
+					<div style="background-color: rgb(77, 197, 237); display:flex;align-items:center;justify-content:center;">
+						<div style="color: black;">
+							<h1 class="jumbotron jumbotron-fluid">Login</h1> 
+							<form action="{{ url_for('login') }}" method="post">
+								<div class="form-group">
+								  	<label>User Name</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="username" name="username" type="text" placeholder="Enter Your Username">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Password</label>
+									<div class="col-sm-8">
+										<input type="password" class="form-control" id="password" name="password" type="password" placeholder="Enter Your Password">
+									</div>
+								</div>								
+								<button type="submit" class="btn btn-primary" value="Sign In">Submit</button>
+							  </form>
+							  <p class="bottom">Don't have an account? <a class="bottom" href="{{url_for('register')}}"> Sign Up here</a></p>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
