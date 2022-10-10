@@ -1,0 +1,3 @@
+https://nalaiyathiran-wiki.s3.jp-tok.cloud-object-storage.appdomain.cloud
+
+This is my webage url for object instance.
