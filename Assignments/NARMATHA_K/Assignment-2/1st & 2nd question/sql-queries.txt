@@ -1,0 +1,19 @@
+//insert
+
+INSERT INTO User
+VALUES ('knarmathait@gmail.com','knarmatha',1001,'knarmatha1001');
+INSERT INTO User
+VALUES ('harshu@gmail.com','pharshu',1002,'pharshu1002');
+INSERT INTO User
+VALUES ('vadhani@gmai.com','vadhani',1003,'vadhani1003');
+
+//update
+UPDATE User
+SET email = 'narmathak@gmail.com'
+WHERE rollno = 1001;
+
+//delete
+DELETE FROM User WHERE username='vadhani';
+
+
+
