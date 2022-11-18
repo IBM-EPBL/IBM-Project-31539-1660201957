@@ -1,0 +1,3 @@
+livereload
+flask
+flask_mysqldb
