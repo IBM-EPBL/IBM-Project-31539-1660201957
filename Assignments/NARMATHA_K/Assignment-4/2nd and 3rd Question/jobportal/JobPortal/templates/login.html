@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% load static%}
+
+{% block content %}
+<head>
+    <style>
+        .maindiv{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<div class="maindiv jumbotron container ">
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p><input type="text" name="username" placeholder="Username..."></p>
+        <p><input type="password" name="password" placeholder="Password..." ></p>
+        <input class="btn btn-success" type="submit" value="Login">
+        <p>Do not have an account<a href='{% url "register" %}'>Register</a></p>
+    </form>
+
+</div>
+{% endblock %}
